@@ -10,6 +10,7 @@ export default class StartManger extends cc.Component {
     // onLoad () {}
 
     start () {
+        //每秒生成
         this.schedule(()=>{
             let newstart = cc.instantiate(this.StartPre);
             newstart.setParent(cc.director.getScene());

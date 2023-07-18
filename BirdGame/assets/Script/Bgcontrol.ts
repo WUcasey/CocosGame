@@ -13,9 +13,6 @@ export default class Bgcontrol extends cc.Component {
     @property
     width:number = 288 ;
 
-    @property(Birdcontrol)
-    bird:Birdcontrol = null;
-
     @property(cc.Node)
     gameover:cc.Node = null;
 
@@ -24,22 +21,28 @@ export default class Bgcontrol extends cc.Component {
 
     @property(cc.Node)
     score_2:cc.Node = null;
-
-    
     
     scoredir:cc.SpriteFrame[] = null;
+    
 
     onLoad () {
+
         cc.loader.loadResDir('score',cc.SpriteFrame,(err,assetArr)=>{
             this.scoredir = assetArr;
         })
+     
     }
 
     start () {
 
+        let bird = cc.find('bird').getComponent('Birdcontrol');
         for(let bg of this.node.children){
             bg.on(cc.Node.EventType.MOUSE_DOWN,()=>{
-                this.bird.fly()
+                //腳本載入問題嗎???
+                if(cc.isValid(bird)){
+                    bird.fly();
+                }
+               
             })
         }
         

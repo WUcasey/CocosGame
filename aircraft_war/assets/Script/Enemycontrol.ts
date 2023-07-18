@@ -37,13 +37,12 @@ export default class Enemycontrol extends cc.Component {
             
         });
 
-        
-
         //300ms
         setTimeout(()=>{
-            // error message
-           //Uncaught TypeError: Cannot read properties of null (reading 'destroy')
-            this.node.destroy()
+            //cc.isValid 檢查此節點是否還存在 如果存在在銷毀
+            if(cc.isValid(this.node)){
+                this.node.destroy()
+            }
         },300);
        
 
