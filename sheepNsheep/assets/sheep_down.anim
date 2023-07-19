@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "sheep_down",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.75,
+  "sample": 4,
+  "speed": 2,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0f485227-2f06-4e5b-bc9c-6143aedbe1a8"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "53917cfa-9c7a-414b-9e01-aa4b5c45ae79"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "10645a00-40a2-4291-9a79-6e143fe03d96"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "5a00ac18-aafb-42d3-bb80-1b4b6f6f2bb2"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "f219c483-35b3-443e-84ef-5ccf89ff600a"
+            }
+          },
+          {
+            "frame": 1.25,
+            "value": {
+              "__uuid__": "10cc524e-60fc-4a40-a16b-419dced5293a"
+            }
+          },
+          {
+            "frame": 1.5,
+            "value": {
+              "__uuid__": "4fc58c23-f38d-4cb6-9a31-181701de27be"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
