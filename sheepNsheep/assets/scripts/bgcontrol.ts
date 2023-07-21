@@ -20,13 +20,21 @@ export default class bgcontrol extends cc.Component {
     @property
     jumpHeight:number = 70;
 
-    
+    holdtimeeslipse:number=0;
+    holdclick:boolean=false
 
+    onLoad(){
+        this.node.on(cc.Node.EventType.TOUCH_START,function(event){
+           this.holdclick = false;
+           
+        })
+    }
 
     start () {
 
         for(let bg of this.node.children){
-            bg.on(cc.Node.EventType.MOUSE_DOWN,()=>{
+            
+            bg.on(cc.Node.EventType.TOUCH_START,()=>{
                 
                 this.sheepjump()
                 
